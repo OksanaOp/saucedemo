@@ -43,7 +43,7 @@ export default defineConfig({
   projects: [
     {
       name: "coffee-cart",
-      testDir: "tests/coffee-cart(work1)",
+      testDir: "/coffee-cart(work1)",
       use: {
         ...devices["Desktop Chrome"],
         baseURL: "https://coffee-cart.app/",
@@ -51,7 +51,7 @@ export default defineConfig({
     },
     {
       name: "coffee-cart2",
-      testDir: "tests/coffee-cart-css",
+      testDir: "/coffee-cart-css",
       use: {
         ...devices["Desktop Chrome"],
         baseURL: "https://coffee-cart.app/",
@@ -61,7 +61,7 @@ export default defineConfig({
 
     {
       name: "aria-attributes",
-      testDir: "tests/aria-attributes",
+      testDir: "/aria-attributes",
       use: {
         ...devices["Desktop Chrome"],
         baseURL: "file:///Users/oksanaoprysk/Downloads/demo-aria.html",
@@ -69,7 +69,7 @@ export default defineConfig({
     },
     {
       name: "conduit",
-      testDir: "tests/conduit",
+      testDir: "/conduit",
       use: {
         ...devices["Desktop Chrome"],
         baseURL: "https://demo.learnwebdriverio.com",
@@ -78,7 +78,7 @@ export default defineConfig({
 
     {
       name: "demoqa",
-      testDir: "tests/demoqa",
+      testDir: "/demoqa",
       use: {
         ...devices["Desktop Chrome"],
         baseURL: "https://demoqa.com/",
@@ -86,7 +86,7 @@ export default defineConfig({
     },
     {
       name: "homework9",
-      testDir: "tests/homework9",
+      testDir: "/homework9",
 
       use: {
         ...devices["Desktop Chrome"],
@@ -96,7 +96,7 @@ export default defineConfig({
 
     {
       name: "homework11",
-      testDir: "tests/homework11",
+      testDir: "/homework11",
       // use: {
       //   ...devices["Desktop Chrome"],
       //   //  baseURL: "https://coffee-cart.app/",
@@ -105,7 +105,7 @@ export default defineConfig({
 
     {
       name: "homework12",
-      testDir: "tests/homework12",
+      testDir: "/homework12",
       use: {
         ...devices["Desktop Chrome"],
         baseURL: "https://coffee-cart.app/",
@@ -113,7 +113,7 @@ export default defineConfig({
     },
     {
       name: "lesson12",
-      testDir: "tests/lesson12",
+      testDir: "/lesson12",
       use: {
         ...devices["Desktop Chrome"],
         baseURL: "https://coffee-cart.app/",
@@ -122,7 +122,7 @@ export default defineConfig({
 
     {
       name: "homework14",
-      testDir: "tests/homework14",
+      testDir: "/homework14",
       use: {
         ...devices["Desktop Chrome"],
         baseURL: "https://demo.learnwebdriverio.com/",
@@ -130,7 +130,7 @@ export default defineConfig({
     },
     {
       name: "homework15",
-      testDir: "tests/homework15",
+      testDir: "/homework15",
       use: {
         ...devices["Desktop Chrome"],
         baseURL: "https://demoqa.com/",
@@ -141,7 +141,7 @@ export default defineConfig({
     },
     {
       name: "lesson16",
-      testDir: "tests/lesson16",
+      testDir: "/lesson16",
       use: {
         ...devices["Desktop Chrome"],
         baseURL: "https://demo.learnwebdriverio.com/",
@@ -149,7 +149,7 @@ export default defineConfig({
     },
     {
       name: "oop-lecture",
-      testDir: "tests/oop-lecture18",
+      testDir: "/oop-lecture18",
       // testMatch: "",
       use: {
         ...devices["Desktop Chrome"],
@@ -158,7 +158,7 @@ export default defineConfig({
     },
     {
       name: "homework18",
-      testDir: "tests/homework18",
+      testDir: "homework18",
       use: {
         ...devices["Desktop Chrome"],
         baseURL: "https://www.saucedemo.com/",
