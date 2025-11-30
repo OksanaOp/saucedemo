@@ -1,6 +1,6 @@
 import { Page } from "@playwright/test";
 //КЛАСИ
-//модифікатори доступу -наслідування, інкапсуляція, (private, public,protected, readonly)
+//модифікатори доступу -наслідування, інкапсуляція, (доступність: private, public,protected, readonly)
 //синтаксичний цукор (class)
 
 export class BasePage {

@@ -30,16 +30,16 @@ export class CartPage {
     );
     return priseSection.innerText();
   }
-  checkout() {
+  async checkout() {
     const checkoutButtonLocator = this.page.locator('[data-test="checkout"]');
     if (checkoutButtonLocator) {
-      checkoutButtonLocator.click();
+      await checkoutButtonLocator.click();
     }
   }
-  continueShopping() {
+  async continueShopping() {
     const continueShoppingButtonLocator = this.page.locator(
       '[data-test="continue-shopping"]'
     );
-    continueShoppingButtonLocator.click();
+    await continueShoppingButtonLocator.click();
   }
 }
