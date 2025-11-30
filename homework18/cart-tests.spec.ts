@@ -28,12 +28,12 @@ test("TS2 Remove product on cart by title", async ({ page }) => {
 test("TS3 Go to Checkout", async ({ page }) => {
   await page.goto("/cart.html");
   const cartPage = new CartPage(page);
-  cartPage.checkout();
+  await cartPage.checkout();
   await expect(page).toHaveURL("/checkout-step-one.html");
 });
 
 test("TS3 Click on Continue Shopping", async ({ page }) => {
   await page.goto("/cart.html");
   const cartPage = new CartPage(page);
-  cartPage.continueShopping();
+  await cartPage.continueShopping();
 });
