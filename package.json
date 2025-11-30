@@ -1,0 +1,21 @@
+{
+  "name": "home-work-1-course",
+  "version": "1.0.0",
+  "description": "Check Odd numbers",
+  "main": "index.js",
+  "scripts": {},
+  "keywords": [
+    "Odd"
+  ],
+  "author": "Oksana Oprysk",
+  "license": "MIT",
+  "devDependencies": {
+    "@playwright/test": "^1.55.1",
+    "@types/node": "^24.6.2"
+  },
+  "dependencies": {
+    "@faker-js/faker": "^10.1.0",
+    "lodash": "^4.17.21",
+    "tsx": "^4.20.6"
+  }
+}
