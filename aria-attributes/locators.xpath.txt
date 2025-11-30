@@ -1,0 +1,48 @@
+тег input з атрибутом placeholder:(перед тегом траба / або //) і перед атрибутом @:
+//input[@placeholder="Full Name"]
+
+/ - слеш спускає шлях на один елемент /html/head
+якщо хочу спуститись нижче на будь який рівень то можна просто // -//input[@placeholder="Full Name"]
+
+щоб скіпнути div треба ставити *:
+//*[@id="userName-wrapper"]
+
+оператор заперечення:
+//input[@id!="userName"]
+
+ф-ції xpath:
+contains():
+//input[contains(@placeholder,="Full Name")]
+
+пошук по частині атрибута щоб довгі назви атрибутів не викор:
+//*[contains(@id,"currentAddress")]
+
+
+Обєднання атрибуів: через and
+//input[@placeholder="name@example.com" and type="email" and id="userEmail"]
+
+or:
+//input[@placeholder="name@example.com" or type="email"]
+
+not:
+//input[@placeholder="name@example.com" and not(@type="email1")]
+
+робота з  текстом: https://demoqa.com/text-box
+//label[text() = 'Full Name']
+
+можна ще заюзати contains():
+//label[contains(text() = 'Full Name')]
+
+піднімання на рівні вище:
+//label[contains(text() = 'Full Name')]/parent::div aбо 
+//label[contains(text() = 'Full Name')].. -підйом на 1 рівент вище
+//label[contains(text() = 'Full Name')]../.. --підйом на 2 рівні вище
+
+піднімання на всіх рівнях, можна вказати куди саме 
+//label[contains(text() = 'Full Name')]/ancestor::div[@id="userName-wrapper"]
+
+спускажмось вниз:
+//label[contains(text() = 'Full Name')]/ancestor::div[@id="userName-wrapper"]//input
+
+
+

@@ -1,0 +1,41 @@
+CSS селектори:
+пошук по тегах:
+div
+
+пошук по класах:
+class - .class
+
+пошук по ID:
+#promotion
+
+Обєднання атрибутів в один сss селектор: data-testId - найстабільніший атрибуит :
+data-test="Espresso"
+
+await page.getByTestId();  якщо налаштовано в конфігу   testIdAttribute: "data-test",
+
+Пошук атрибутів:
+[aria-label="Cappuccino"]
+
+Комбінація атрибутів: 
+[aria-label="Cappuccino"][data-test="Cappuccino"]
+Комбінація атрибутів з тегом:
+div[aria-label="Cappuccino"]
+Комбінація атрибутів з класом:
+[aria-label="Cappuccino"].cup-body
+
+Пошук елементів за входженням (contains)
+якщо є id="userName-wrapper", то пошук по частині слова яке міститься де небудь:
+[id *="userName]
+
+Пошук по слову:
+[id ~="userName]
+Пошук по слову де атрибут починається зі слова:
+[id ^="userName]
+Пошук по слову де атрибут закінчується зі слова:
+[id $="wrapper]
+
+Підніматись на рівень вище використовуючи locator: викор. конструкцію css i xpath:
+await page.locator("#userName").locator("..")
+
+Опускатись на рівень нижче: айді атрибута і тег до якого спускаємось:
+[id="userName-wrapper"] label
