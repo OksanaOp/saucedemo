@@ -164,6 +164,14 @@ export default defineConfig({
         baseURL: "https://www.saucedemo.com/",
       },
     },
+    {
+      name: "lesson21",
+      testDir: "lesson21(cookies)",
+      use: {
+        ...devices["Desktop Chrome"],
+        baseURL: "https://www.zara.com/",
+      },
+    },
 
     /* Test against mobile viewports. */
     // {
