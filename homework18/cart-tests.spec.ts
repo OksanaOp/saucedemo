@@ -2,6 +2,7 @@ import { expect, Page, test } from "@playwright/test";
 import { LoginPage } from "./LoginPage";
 import { InventoryPage } from "./Inventory";
 import { CartPage } from "./CartPage";
+import { StepOneCheckout } from "./StepOnecheckout";
 
 test.beforeEach(async ({ page }) => {
   const username = "standard_user";
@@ -25,11 +26,21 @@ test("TS2 Remove product on cart by title", async ({ page }) => {
   await expect(removedCardContainer).not.toBeVisible();
 });
 
-test("TS3 Go to Checkout", async ({ page }) => {
+test("TS3 Go to Checkout and fill in fields on checkoutStep1", async ({
+  page,
+}) => {
   await page.goto("/cart.html");
   const cartPage = new CartPage(page);
   await cartPage.checkout();
   await expect(page).toHaveURL("/checkout-step-one.html");
+
+  const stepOneCheckout = new StepOneCheckout(page);
+  const randomNumber = Math.floor(Math.random() * 9999);
+  const firstName = `First${randomNumber}`;
+  const lastName = `Last${randomNumber}`;
+  const zipCode = randomNumber.toString();
+  await stepOneCheckout.fillForm(firstName, lastName, zipCode);
+  await stepOneCheckout.continueCheckout();
 });
 
 test("TS3 Click on Continue Shopping", async ({ page }) => {
