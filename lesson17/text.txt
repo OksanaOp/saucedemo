@@ -93,3 +93,7 @@ const myPromise = new Promise((resolve, reject) => {
   .finally(() => {
     console.log('Процес завершено');
   });
+
+
+
+  ---- https://www.jsv9000.app/
